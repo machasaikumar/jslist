@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>java script</title>
+  </head>
+  <body>
+     <ul class="list-group">
+   <li class="list-group-item d-flex justify-content-between">
+      <span>list1</span>
+      <i class="fa fa-trash" aria-hidden="true"></i>
+   </li>
+
+   <li class="list-group-item d-flex justify-content-between">
+      <span>list2</span>
+      <i class="fa fa-trash" aria-hidden="true"></i>
+   </li>
+
+   <li class="list-group-item d-flex justify-content-between">
+      <span>list3</span>
+      <i class="fa fa-trash" aria-hidden="true"></i>
+   </li>
+     </ul>
+<script>
+   var a1=document.querySelector('ul');
+   var b1=document.querySelector('.fa');
+   //console.log(a1);
+   //console.log(b1);
+   a1.addEventListener('click',function(e){
+      //console.log(e.target.classList.contains('fa'));
+
+      if(e.target.classList.contains('fa')){
+      console.log(e.target.parentElement.remove());
+      }
+   })
+
+
+
+</script>
+
+
+
+     </body>
+     </html>
